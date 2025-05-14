@@ -14,7 +14,7 @@ body{
     font-family: 'Open Sans', serif;
     color: aliceblue;
     background-color: rgb(134, 124, 114) ;
-    background-image: url("content/sc_bg.jpg");
+    background-image: url("./content/sc_bg.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
