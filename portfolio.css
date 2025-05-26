@@ -36,6 +36,13 @@ img {
     width: 100%;
     padding: 0;
     display: flex;
+    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    align-self: flex-start;
+    top: 0;
+    overflow-y: auto;
+    z-index: 999;
 }
 
 .mainHeaderContent{
