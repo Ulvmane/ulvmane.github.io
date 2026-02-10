@@ -11,7 +11,7 @@
 
 body{
     /* Create the parallax scrolling effect */
-    font-family: 'Open Sans', serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     color: aliceblue;
     background-color: rgb(134, 124, 114) ;
     background-image: url("content/sc_bg.jpg");
@@ -71,7 +71,7 @@ a{
     font-size: 1rem;
     text-decoration: none;
     color: aliceblue;
-    font-family: 'Open Sans', serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: bold;
 }
 a:visited{
@@ -79,7 +79,7 @@ a:visited{
     font-size: 1rem;
     text-decoration: none;
     color: aliceblue;
-    font-family: 'Open Sans', serif;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 a:hover{
@@ -87,7 +87,7 @@ a:hover{
     font-size: 1rem;
     text-decoration: none;
     color: aliceblue;
-    font-family: 'Open Sans', serif;
+    font-family: 'IBM Plex Sans', serif;
     animation: enlarge 0.5s;
     animation-fill-mode: forwards;
 }
@@ -187,7 +187,7 @@ a.active {
         font-size: 1em;
     }
 } 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
     .sqrTextFields {
         font-size: 0.7em; /* Improved readability */
         overflow-wrap: break-word; /* Added for overflow handling */
@@ -236,17 +236,22 @@ a.active {
     margin: 0.5vw;
 }
 .detailText{
+	font-size: 1vw;
     margin: 0.5vw;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (orientation: portrait) {
     /* Adjust the main project card */
     .sqrHoverable {
         width: 95vw; /* Make it almost full width */
-        height: 50vw; /* Increase height to make images more prominent */
+        height: 15vw; /* Increase height to make images more prominent */
         margin: 1vw auto; /* Center it and add some vertical margin */
         margin-top: 10px; /* Add a fixed top margin */
     }
+
+#sqrSmall {
+    height: 15vw;
+}
 
     /* Adjust the text overlay within the project card */
     .sqrTextFields {
@@ -294,7 +299,7 @@ a.active {
     .links {
         flex-direction: row;
         gap: 10px;
-        margin-top: 10px;
+        margin-top: -10px;
         margin-left: 0;
         justify-content: center;
     }
@@ -312,7 +317,7 @@ a.active {
         font-size: 1.6vw; /* Reduced font size for H3 in all portrait modes */
     }
     .sqrTextFields h1 {
-        font-size: 1.9vw; /* Reduced font size for H1 in all portrait modes */
+        font-size: 3.9vw; /* Reduced font size for H1 in all portrait modes */
     }
 }
 
