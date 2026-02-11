@@ -1,6 +1,6 @@
 # Project Overview
 
-This directory contains a static portfolio website for Felix Ulvmåne, a Tools and Engine Programmer. The website serves to showcase his work, primarily in game development, and provides information about him and links to his resume and GitHub profile.
+This directory contains a static portfolio website for Felix Ulvmåne, a Tools and Engine Programmer. The website serves to showcase his work, primarily in game development, and provides information about him and links to his Résumé and GitHub profile.
 
 ## Directory Overview
 
@@ -10,7 +10,7 @@ The project is structured as a collection of HTML, CSS, and image files. There a
 *   `portfolio.css`: This file contains all the styling rules for the entire website.
 *   `___content/`: This directory stores promotional images used across the project pages.
 *   `felix_minifig.png`, `felix_minifig_2.png`: These are likely profile pictures or branding elements for the website owner.
-*   `FelixUlvmane_CV_2023.pdf`: This file contains Felix Ulvmåne's resume.
+*   `FelixUlvmane_CV_2023.pdf`: This file contains Felix Ulvmåne's Résumé.
 
 ## Key Files
 
