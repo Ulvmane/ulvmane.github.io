@@ -1,390 +1,389 @@
 :root {
-    --text-overlay-margin: 15px;
+  --text-overlay-margin: 15px;
 }
-
 
 /* Margin 0 by default for convenience*/
 * {
-    margin: 0;
-    filter: blur(.0px);
+  margin: 0;
+  filter: blur(.0px);
 }
 
 body {
-    /* Create the parallax scrolling effect */
-    font-family: 'IBM Plex Sans', sans-serif;
-    color: aliceblue;
-    background-image: url("content/sc_bg.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    backdrop-filter: blur(3px);
-    padding-bottom: 50px;
+  /* Create the parallax scrolling effect */
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: aliceblue;
+  background-image: url("content/sc_bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(3px);
+  padding-bottom: 50px;
 }
 
 img {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 
 .headerBar {
-    background: rgb(11, 10, 19);
-    background: linear-gradient(180deg, rgba(11, 10, 19, 1) 0%, rgba(0, 0, 0, 0) 100%);
-    height: auto;
-    background-size: cover;
-    width: 100%;
-    padding: 0;
-    display: flex;
+  background: rgb(11, 10, 19);
+  background: linear-gradient(180deg, rgba(11, 10, 19, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  height: auto;
+  background-size: cover;
+  width: 100%;
+  padding: 0;
+  display: flex;
 }
 
 .mainHeaderContent {
-    display: flex;
-    padding: 2vw 2vw;
+  display: flex;
+  padding: 2vw 2vw;
 }
 
 .pages {
-    margin-top: auto;
-    display: flex;
-    margin-right: 2vw;
-    gap: 2vw;
+  margin-top: auto;
+  display: flex;
+  margin-right: 2vw;
+  gap: 2vw;
 }
 
 .links {
-    margin-top: auto;
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 2vw;
-    padding: 2vw 2vw;
-    margin-left: auto;
-    gap: 2vw;
+  margin-top: auto;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2vw;
+  padding: 2vw 2vw;
+  margin-left: auto;
+  gap: 2vw;
 
 }
 
 .links:visited {
-    font-size: Bold 1.5rem;
-    text-decoration: none;
-    color: aliceblue;
+  font-size: Bold 1.5rem;
+  text-decoration: none;
+  color: aliceblue;
 }
 
 a {
-    font-size: 1rem;
-    text-decoration: none;
-    color: aliceblue;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  color: aliceblue;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: bold;
 }
 
 a:visited {
-    font-weight: bold;
-    font-size: 1rem;
-    text-decoration: none;
-    color: aliceblue;
-    font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  color: aliceblue;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 a:hover {
-    font-weight: bold;
-    font-size: 1rem;
-    text-decoration: none;
-    color: aliceblue;
-    font-family: 'IBM Plex Sans', serif;
-    animation: enlarge 0.5s;
-    animation-fill-mode: forwards;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  color: aliceblue;
+  font-family: 'IBM Plex Sans', serif;
+  animation: enlarge 0.5s;
+  animation-fill-mode: forwards;
 }
 
 a.active {
-    color: #8b9cad;
-    /* A slightly darker shade of aliceblue
+  color: #8b9cad;
+  /* A slightly darker shade of aliceblue
  for the active link */
-    font-weight: bold;
-    /* Ensure it remains bold */
+  font-weight: bold;
+  /* Ensure it remains bold */
 }
 
 .title {
-    margin-bottom: auto;
-    margin-right: 4vw;
+  margin-bottom: auto;
+  margin-right: 4vw;
 }
 
 .title:hover {
-    animation: enlarge 0.5s;
-    animation-fill-mode: forwards;
+  animation: enlarge 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .hoverable:hover {
-    animation: enlarge 0.5s;
-    animation-fill-mode: forwards;
+  animation: enlarge 0.5s;
+  animation-fill-mode: forwards;
 }
 
 /*Content*/
 .mainContent {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .sqrHoverable {
-    margin-top: 1vw;
-    width: 60vw;
-    height: 20vw;
-    background-color: rgb(26, 134, 235);
-    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.219));
-    position: relative;
+  margin-top: 1vw;
+  width: 60vw;
+  height: 20vw;
+  background-color: rgb(26, 134, 235);
+  filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.219));
+  position: relative;
 }
 
 .sqrHoverable::before {
-    background-color: rgb(26, 134, 235);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
+  background-color: rgb(26, 134, 235);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }
 
 #subtitle {
-    margin-top: 1vw;
-    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.219));
+  margin-top: 1vw;
+  filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.219));
 }
 
 #ytPlayer {
-    margin-top: 1vw;
-    width: 48vw;
-    height: 27vw;
-    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.219));
-    border: 0px;
+  margin-top: 1vw;
+  width: 48vw;
+  height: 27vw;
+  filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.219));
+  border: 0px;
 }
 
 .sqrHoverable:hover {
-    animation: enlarge 1s;
-    animation-fill-mode: forwards;
+  animation: enlarge 1s;
+  animation-fill-mode: forwards;
 }
 
 #sqrSmall {
-    height: 10vw;
+  height: 10vw;
 }
 
 .promoImage {
-    width: 100%;
-    height: 100%;
-    margin: 0%;
-    padding: 0%;
-    z-index: 1;
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  z-index: 1;
 }
 
 .sqrTextFields {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    bottom: 0;
-    width: calc(100% - (var(--text-overlay-margin) * 2));
-    flex-grow: 1;
-    flex-shrink: 0;
-    z-index: 1;
-    font-size: 0.75em;
-    align-items: end;
-    justify-content: space-between;
-    padding: var(--text-overlay-margin);
-    overflow-wrap: break-word;
-    /* Added for general overflow handling */
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  bottom: 0;
+  width: calc(100% - (var(--text-overlay-margin) * 2));
+  flex-grow: 1;
+  flex-shrink: 0;
+  z-index: 1;
+  font-size: 0.75em;
+  align-items: end;
+  justify-content: space-between;
+  padding: var(--text-overlay-margin);
+  overflow-wrap: break-word;
+  /* Added for general overflow handling */
 }
 
 .firstElement {
-    margin-top: 0%;
+  margin-top: 0%;
 }
 
 @media only screen and (min-width: 1600px) {
-    .sqrTextFields {
-        font-size: 1em;
-    }
+  .sqrTextFields {
+    font-size: 1em;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .sqrTextFields {
-        font-size: 0.7em;
-        /* Improved readability */
-        overflow-wrap: break-word;
-        /* Added for overflow handling */
-    }
+  .sqrTextFields {
+    font-size: 0.7em;
+    /* Improved readability */
+    overflow-wrap: break-word;
+    /* Added for overflow handling */
+  }
 
-    .sqrTextFields h1,
-    .sqrTextFields h3 {
-        /* Target h1 and h3 specifically */
-        overflow-wrap: break-word;
-    }
+  .sqrTextFields h1,
+  .sqrTextFields h3 {
+    /* Target h1 and h3 specifically */
+    overflow-wrap: break-word;
+  }
 
-    .sqrHoverable {
-        height: 25vw;
-        /* Slightly taller for better image viewing */
-    }
+  .sqrHoverable {
+    height: 25vw;
+    /* Slightly taller for better image viewing */
+  }
 
-    .mainHeaderContent {
-        flex-wrap: wrap;
-        /* Allow wrapping for pages and links */
-        justify-content: center;
-    }
+  .mainHeaderContent {
+    flex-wrap: wrap;
+    /* Allow wrapping for pages and links */
+    justify-content: center;
+  }
 
-    .pages,
-    .links {
-        margin-top: 10px;
-    }
+  .pages,
+  .links {
+    margin-top: 10px;
+  }
 }
 
 .sqrTextFields.h3 {
-    font-size: .75em;
+  font-size: .75em;
 }
 
 .sqrTextFields.right {
-    flex: 1;
+  flex: 1;
 }
 
 .workDescription {
-    display: flex;
-    flex-direction: column;
-    width: 48vw;
+  display: flex;
+  flex-direction: column;
+  width: 48vw;
 }
 
 .detailWindow {
-    margin: 0.1vw;
-    padding: 0.2vw;
-    margin-top: 1vw;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(11, 10, 19, 0.2);
-    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.25));
-    /* position: relative; */
-    display: block;
-    flex-direction: row;
-    border-radius: 3px;
+  margin: 0.1vw;
+  padding: 0.2vw;
+  margin-top: 1vw;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 10, 19, 0.2);
+  filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.25));
+  /* position: relative; */
+  display: block;
+  flex-direction: row;
+  border-radius: 3px;
 }
 
 .detailWindow h3 li {
-    margin: 0.5vw;
+  margin: 0.5vw;
 }
 
 .detailText {
-    font-size: 1vw;
-    margin: 0.5vw;
+  font-size: 1vw;
+  margin: 0.5vw;
 }
 
 @media only screen and (orientation: portrait) {
 
-    /* Adjust the main project card */
-    .sqrHoverable {
-        width: 95vw;
-        /* Make it almost full width */
-        height: 35vw;
-        /* Increase height to make images more prominent */
-        margin: 1vw auto;
-        /* Center it and add some vertical margin */
-        margin-top: 10px;
-        /* Add a fixed top margin */
-    }
+  /* Adjust the main project card */
+  .sqrHoverable {
+    width: 95vw;
+    /* Make it almost full width */
+    height: 35vw;
+    /* Increase height to make images more prominent */
+    margin: 1vw auto;
+    /* Center it and add some vertical margin */
+    margin-top: 10px;
+    /* Add a fixed top margin */
+  }
 
-    #sqrSmall {
-        height: 35vw;
-    }
+  #sqrSmall {
+    height: 35vw;
+  }
 
-    /* Adjust the text overlay within the project card */
-    .sqrTextFields {
-        flex-direction: column;
-        /* Stack title and date */
-        margin-top: 10vw;
-        align-items: center;
-        /* Center content */
-        justify-content: space-between;
-        /* Center content vertically if possible */
-        padding: 10px;
-        /* Adjust padding */
-        font-size: 0.8em;
-        /* Base font size for text within sqrTextFields */
-        width: calc(100% - 20px);
-        /* Adjust width to account for padding */
-        height: 100%;
-        overflow-wrap: break-word;
-        /* Added for overflow handling */
-    }
+  /* Adjust the text overlay within the project card */
+  .sqrTextFields {
+    flex-direction: column;
+    /* Stack title and date */
+    margin-top: 10vw;
+    align-items: center;
+    /* Center content */
+    justify-content: space-between;
+    /* Center content vertically if possible */
+    padding: 10px;
+    /* Adjust padding */
+    font-size: 0.8em;
+    /* Base font size for text within sqrTextFields */
+    width: calc(100% - 20px);
+    /* Adjust width to account for padding */
+    height: 100%;
+    overflow-wrap: break-word;
+    /* Added for overflow handling */
+  }
 
-    /* Specifically style h1 and h3 inside sqrTextFields for better readability */
-    .sqrTextFields h1 {
-        margin-top: 9.5vw;
-        font-size: 10vw;
-        /* Fluid scaling for title */
-        text-align: center;
-        margin-bottom: 5px;
-        overflow-wrap: break-word;
-        /* Keep as fallback */
-    }
+  /* Specifically style h1 and h3 inside sqrTextFields for better readability */
+  .sqrTextFields h1 {
+    margin-top: 9.5vw;
+    font-size: 10vw;
+    /* Fluid scaling for title */
+    text-align: center;
+    margin-bottom: 5px;
+    overflow-wrap: break-word;
+    /* Keep as fallback */
+  }
 
-    .sqrTextFields h3 {
-        font-size: clamp(0.8rem, 2vw + 0.4rem, 1rem);
-        /* Fluid scaling for date */
-        text-align: center;
-        overflow-wrap: break-word;
-        /* Keep as fallback */
-    }
+  .sqrTextFields h3 {
+    font-size: clamp(0.8rem, 2vw + 0.4rem, 1rem);
+    /* Fluid scaling for date */
+    text-align: center;
+    overflow-wrap: break-word;
+    /* Keep as fallback */
+  }
 
-    /* Adjust header elements if needed */
-    .headerBar {
-        flex-direction: column;
-        /* Stack header elements */
-        align-items: center;
-    }
+  /* Adjust header elements if needed */
+  .headerBar {
+    flex-direction: column;
+    /* Stack header elements */
+    align-items: center;
+  }
 
-    .mainHeaderContent {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
+  .mainHeaderContent {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
 
-    .pages {
-        flex-direction: row;
-        /* Keep pages horizontal if possible, or stack */
-        gap: 10px;
-        margin-top: 10px;
-        font-size: 6.9vw;
-    }
+  .pages {
+    flex-direction: row;
+    /* Keep pages horizontal if possible, or stack */
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 6.9vw;
+  }
 
-    .links {
-        flex-direction: row;
-        gap: 10px;
-        margin-top: -10px;
-        margin-left: 0;
-        justify-content: center;
-        font-size: 6.9vw;
-    }
+  .links {
+    flex-direction: row;
+    gap: 10px;
+    margin-top: -10px;
+    margin-left: 0;
+    justify-content: center;
+    font-size: 6.9vw;
+  }
 
-    .title {
-        margin-right: 0;
-        text-align: center;
-        margin-bottom: 10px;
-        font-size: 7vw;
-    }
+  .title {
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 7vw;
+  }
 
-    a {
-        font-size: 2rem;
-    }
+  a {
+    font-size: 2rem;
+  }
 
-    a:hover {
-        font-size: 2rem;
-    }
+  a:hover {
+    font-size: 2rem;
+  }
 }
 
 /* New media query for general portrait mode scaling */
 @media only screen and (orientation: portrait) {
-    .sqrTextFields h3 {
-        font-size: 1.6vw;
-        /* Reduced font size for H3 in all portrait modes */
-    }
+  .sqrTextFields h3 {
+    font-size: 1.6vw;
+    /* Reduced font size for H3 in all portrait modes */
+  }
 
-    .sqrTextFields h1 {
-        font-size: 6.9vw;
-        /* Reduced font size for H1 in all portrait modes */
-    }
+  .sqrTextFields h1 {
+    font-size: 6.9vw;
+    /* Reduced font size for H1 in all portrait modes */
+  }
 
 }
 
@@ -394,146 +393,146 @@ a.active {
 /* ------------------------------------------------------ */
 
 @keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+  }
 
-    50% {
-        transform: scale(1.05);
-    }
+  50% {
+    transform: scale(1.05);
+  }
 
-    100% {
-        transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
 }
 
 
 @keyframes pulse_ds {
-    0% {
-        transform: scale(1);
-        filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.0));
-    }
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.0));
+  }
 
-    50% {
-        transform: scale(1.05);
-        filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 1));
-    }
+  50% {
+    transform: scale(1.05);
+    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 1));
+  }
 
-    100% {
-        transform: scale(1);
-        filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.0));
-    }
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.0));
+  }
 }
 
 @keyframes enlarge {
-    0% {
-        transform: scale(1);
-        filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.0));
-    }
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.0));
+  }
 
-    100% {
-        transform: scale(1.01);
-        filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 1));
-    }
+  100% {
+    transform: scale(1.01);
+    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 1));
+  }
 }
 
 /* New styles for the layout */
 .about-content-row {
-    display: flex;
-    flex-direction: row;
-    /* Arranges image and aboutBox side-by-side */
-    align-items: center;
-    /* Vertically centers them */
-    gap: 20px;
-    /* Space between image and aboutBox */
-    margin-top: 20px;
-    /* Space below the h1 */
-    width: 100%;
-    /* Allows it to expand */
-    max-width: 1100px;
-    /* Optional: constrain the row width for better readability on large screens */
+  display: flex;
+  flex-direction: row;
+  /* Arranges image and aboutBox side-by-side */
+  align-items: center;
+  /* Vertically centers them */
+  gap: 20px;
+  /* Space between image and aboutBox */
+  margin-top: 20px;
+  /* Space below the h1 */
+  width: 100%;
+  /* Allows it to expand */
+  max-width: 1100px;
+  /* Optional: constrain the row width for better readability on large screens */
 }
 
 .felix-profile-image {
-    width: 30%;
-    /* Fixed width for the image */
-    height: auto;
-    /* Maintain aspect ratio */
-    border-radius: 3px;
-    /* Consistent with aboutBox */
-    object-fit: cover;
-    /* Ensure image covers the area */
-    flex-shrink: 0;
-    /* Prevent image from shrinking if space is tight */
+  width: 30%;
+  /* Fixed width for the image */
+  height: auto;
+  /* Maintain aspect ratio */
+  border-radius: 3px;
+  /* Consistent with aboutBox */
+  object-fit: cover;
+  /* Ensure image covers the area */
+  flex-shrink: 0;
+  /* Prevent image from shrinking if space is tight */
 }
 
 .aboutBox {
-    /* Allows aboutBox to take up remaining space */
-    height: 100%;
-    /* Keep from detailWindow */
-    /* Removed width: 60vw; and margin: auto; as parent handles layout */
-    margin-top: 1vw;
-    /* From detailWindow, potentially overridden by parent alignment */
-    margin-bottom: 0.1vw;
-    /* From detailWindow, potentially overridden by parent alignment */
-    background-color: rgba(11, 10, 19, 0.2);
-    /* From detailWindow */
-    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.25));
-    /* From detailWindow */
-    position: relative;
-    /* From detailWindow */
-    Display: block;
-    /* From detailWindow */
-    /* Removed flex-direction: row; as parent controls row layout */
-    border-radius: 3px;
-    /* Consistent */
-    padding: 0.2vw;
-    /* From detailWindow */
-    width: 59vw;
-    /* Reverted to 60vw */
-    margin-top: 0vw;
-    /* From detailWindow */
-    margin-bottom: -1.1vw;
-    /* From detailWindow */
-    margin-left: auto;
-    /* Reverted to auto for centering */
-    margin-right: auto;
-    /* Reverted to auto for centering */
-    background-color: rgba(10, 10, 19, 0.2);
-    /* From detailWindow */
-    filter: drop-shadow(-1px 5px 4px rgba(0, 0, 0, 0.25));
-    /* From detailWindow */
-    flex-direction: row;
-    /* From detailWindow */
+  /* Allows aboutBox to take up remaining space */
+  height: 100%;
+  /* Keep from detailWindow */
+  /* Removed width: 60vw; and margin: auto; as parent handles layout */
+  margin-top: 1vw;
+  /* From detailWindow, potentially overridden by parent alignment */
+  margin-bottom: 0.1vw;
+  /* From detailWindow, potentially overridden by parent alignment */
+  background-color: rgba(11, 10, 19, 0.2);
+  /* From detailWindow */
+  filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.25));
+  /* From detailWindow */
+  position: relative;
+  /* From detailWindow */
+  Display: block;
+  /* From detailWindow */
+  /* Removed flex-direction: row; as parent controls row layout */
+  border-radius: 3px;
+  /* Consistent */
+  padding: 0.2vw;
+  /* From detailWindow */
+  width: 59vw;
+  /* Reverted to 60vw */
+  margin-top: 0vw;
+  /* From detailWindow */
+  margin-bottom: -1.1vw;
+  /* From detailWindow */
+  margin-left: auto;
+  /* Reverted to auto for centering */
+  margin-right: auto;
+  /* Reverted to auto for centering */
+  background-color: rgba(10, 10, 19, 0.2);
+  /* From detailWindow */
+  filter: drop-shadow(-1px 5px 4px rgba(0, 0, 0, 0.25));
+  /* From detailWindow */
+  flex-direction: row;
+  /* From detailWindow */
 }
 
 @media only screen and (orientation: portrait) {
-    .felix-profile-image {
-        width: 40%;
-        /* Make it almost full width */
-    }
+  .felix-profile-image {
+    width: 40%;
+    /* Make it almost full width */
+  }
 
-    .aboutBox {
-        margin-left: 0;
-        margin-right: 0;
-        width: 95vw;
-    }
+  .aboutBox {
+    margin-left: 0;
+    margin-right: 0;
+    width: 95vw;
+  }
 
-    .about-content-row {
-        font-size: 3vw;
-        flex-direction: column;
-    }
+  .about-content-row {
+    font-size: 3vw;
+    flex-direction: column;
+  }
 
-    .felix-profile-image {
-        width: 60%;
-    }
+  .felix-profile-image {
+    width: 60%;
+  }
 
-    #ytPlayer {
-        height: 55.125vw;
-        width: 98vw;
-    }
+  #ytPlayer {
+    height: 55.125vw;
+    width: 98vw;
+  }
 
-    .workDescription {
-        width: 98vw;
-    }
+  .workDescription {
+    width: 98vw;
+  }
 }
